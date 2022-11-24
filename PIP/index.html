@@ -6,10 +6,57 @@
 -->
 
 <html lang="en">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 5px;
+}
+
+.column_vid_0 {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+
+.column_vid_1 {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+button {
+  width: 100px;
+  height: 50px;
+  border-radius: 20px;
+}
+figcaption {
+    background-color: #222;
+    color: #fff;
+    font: italic smaller sans-serif;
+    padding: 3px;
+    text-align: center;
+}
+.crop {
+	width: 200px;
+	height: 150px;
+	overflow: hidden;
+}
+</style>
 <head>
   <title>PIP</title>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
@@ -38,8 +85,8 @@
 				  <li><a href="#sr">Image Super-Resolution</a></li> 
 				  <li><a href="#inpainting">Image Inpainting</a></li> 
                   <li><a href="#dehazing">Image Dehazing</a></li> 
-				  <li><a href="#video">Video Denoising</a></li> 
-				  <li><a href="#video">Video SR</a></li> 
+				  <li><a href="#video_denoising">Video Denoising</a></li> 
+				  <li><a href="#video_sr">Video SR</a></li> 
 		  </ul>
 		</div>
 	  </div>
@@ -51,14 +98,15 @@
         <div class="row">
 
             <!-- Entries Column -->
-            <div class="col-md-8" style="height: 100vh;">
+            <div class="col-md-12" style="height: 180vh;">
                 
                 <!-- Main Image -->
                 <h1 style="color:gray;font-family: Arial; font-size:40px"><center>PIP: Positional-encoding Image Prior<center></h1>
 				<h3 style="font-family: Arial; font-size:25px"><center>Nimrod Shabtay*, Eli Schwartz*, Raja Giryes<center></h3>
-				<h3 style="font-family: Arial; font-size:25px"><center>Faculty of Electrical Engineering - Tel Aviv University</center></h3>
-                <center><img class="img-responsive" src="tau_logo.jpg" alt=""><br><center>
-                
+				<h3 style="font-family: Arial; font-size:25px"><center>Faculty of Electrical Engineering - Tel Aviv University</center></h3>				
+                <center><img class="img-responsive" src="tau_logo.jpg" alt=""><br><center>				
+                <button><a style="font-family: Arial; font-size:22px" href="#">ArXiv</a></button>
+				<button><a style="font-family: Arial; font-size:22px" href="https://github.com/NimrodShabtay/positional-encoding-image-prior">Code</a></button>
                 <div style="margin-top:3%; text-align:justify;">  
 					<h2> Abstract </h2>
 					<p>
@@ -71,21 +119,199 @@
 						</p>
                 </div>
             </div> 
-
-            <!-- Contact Info on the Sidebar -->
-            <div class="col-md-4">
-                <div style="font-family: 'Oswald', sans-serif; font-size: 20px;"><br><br><br>Resources</div><br>
-            </div>
-            
-            
-            <!-- Links on the Sidebar -->
-            <div class="col-md-4" style="margin-top:2%">
-              <dd><a href="#">Code</a></dd> 
-              <dd><a href="#">ArXiv</a></dd>              
-			  <dd><a href="#">bibtex</a></dd>   
-            </div>
-
-            
+			
+			<div class="col-md-12" style="height: 80vh;">    
+                <h2 id="denoising">Image Denoising</h2>
+				<div class="row">
+				  <div class="column">
+					<figure>
+						<img src="Images/Baboon_gt.png" alt="GT" style="width:100%">
+						<figcaption>GT</figcaption>
+					</figure>
+				  </div>
+				  <div class="column">
+				  <figure>
+					<img src="Images/Baboon_noisy.png" alt="Noisy" style="width:100%">
+				  <figcaption>Noisy</figcaption>
+					</figure>
+				  </div>
+				  <div class="column">
+				  <figure>
+					<img src="Images/Baboon_dip.png" alt="DIP" style="width:100%">
+					<figcaption>DIP</figcaption>
+					</figure>
+				  </div>
+				  <div class="column">
+				  <figure>
+					<img src="Images/Baboon_fixed_ff.png" alt="PIP (Ours)" style="width:100%">
+					<figcaption>PIP (Ours)</figcaption>
+					</figure>
+				  </div>
+				</div>
+			</div>
+			<div class="col-md-12" style="height: 80vh;">    
+                <h2 id="sr">Image Super-Resolution</h2>
+				<div class="row">
+				  <div class="column">
+				  <figure>
+					<img src="Images/Set5_baby_hr.png" alt="GT" style="width:100%">
+					<figcaption>HR</figcaption>
+					</figure>
+				  </div>
+				  <div class="column">
+				  <figure>
+					<img src="Images/Set5_baby_lr.png" alt="Noisy" style="width:100%">
+					<figcaption>LR</figcaption>
+					</figure>
+				  </div>
+				  <div class="column">
+				  <figure>
+					<img src="Images/Set5_baby_dip.png" alt="DIP" style="width:100%">
+					<figcaption>DIP</figcaption>
+					</figure>
+				  </div>
+				  <div class="column">
+				  <figure>
+					<img src="Images/Set5_baby_infer_ff.png" alt="PIP (Ours)" style="width:100%">
+					<figcaption>PIP (Ours)</figcaption>
+					</figure>
+				  </div>
+				</div>
+			</div>
+			<div class="col-md-12" style="height: 80vh;">  			
+                <h2 id="inpainting">Image Inpainting</h2>
+				<div class="row">
+				  <div class="column">
+				  <figure>
+					<img src="Images/vase_gt.png" alt="GT" style="width:100%">
+					<figcaption>Original</figcaption>
+					</figure>
+				  </div>
+				  <div class="column">
+				  <figure>
+					<img src="Images/vase_masked.png" alt="Noisy" style="width:100%">
+					<figcaption>Masked</figcaption>
+					</figure>
+				  </div>
+				  <div class="column">
+				  <figure>
+					<img src="Images/vase_dip.png" alt="DIP" style="width:100%">
+					<figcaption>DIP</figcaption>
+					</figure>
+				  </div>
+				  <div class="column">
+				  <figure>
+					<img src="Images/vase_mlp_learned_ff.png" alt="PIP (Ours)" style="width:100%">
+					<figcaption>PIP (Ours)</figcaption>
+					</figure>
+				  </div>
+				</div>            
+			</div>
+			<div class="col-md-12" style="height: 80vh;">  			
+                <h2 id="dehazing">Image Dehazing</h2>
+				<div class="row">
+				  <div class="column">
+				  <figure>
+					<img src="Images/lviv_original.jpg" alt="Hazy" style="width:100%">
+					<figcaption>Hazy</figcaption>
+					</figure>
+				  </div>
+				  <div class="column">
+				  <figure>
+					<img src="Images/lviv_1_final.jpg" alt="DoubleDIP (published)" style="width:100%">
+					<figcaption>DoubleDIP (Published)</figcaption>
+					</figure>
+				  </div>
+				  <div class="column">
+				  <figure>
+					<img src="Images/lviv_1_final_code.jpg" alt="DoubleDIP (Official Code)" style="width:100%">
+					<figcaption>DoubleDIP (Official code)</figcaption>
+					</figure>
+				  </div>
+				  <div class="column">
+				  <figure>
+					<img src="Images/lviv_1_pip_final.jpg" alt="Double-PIP (Ours)" style="width:100%">
+					<figcaption>PIP (Ours)</figcaption>
+					</figure>
+				  </div>
+				</div>
+			</div>
+			<div class="col-md-12" style="height: 130vh;">  				
+                <h2 id="video_denoising">Video Denoising</h2>
+				<div class="row">
+				  <div class="column_vid_0">
+					<figure>
+					  <img src="Video/judo_gt.gif" style="width:100%">					  
+					<figcaption>Original Video</figcaption>
+					</figure>
+				  </div>
+				  <div class="column_vid_0">
+										<figure>
+					  <img src="Video/judo_noisy.gif" style="width:100%">					  
+					<figcaption>Noisy Video</figcaption>
+					</figure>
+				  </div>
+				<div class="row">
+				  <div class="column_vid_1">
+										<figure>
+					  <img src="Video/judo_dip.gif" style="width:100%">					  
+					<figcaption>DIP (frame by frame)</figcaption>
+					</figure>
+				  </div>
+				  <div class="column_vid_1">
+										<figure>
+					  <img src="Video/judo_3d_dip.gif" style="width:100%">					  
+					<figcaption>3D-DIP</figcaption>
+					</figure>					
+				  </div>
+				  <div class="column_vid_1">
+				  <figure>
+					  <img src="Video/judo_pip.gif" style="width:100%">					  
+					<figcaption>PIP (Ours)</figcaption>
+					</figure>					
+				  </div>
+				</div>
+				</div>
+			</div>
+			
+			<div class="col-md-12" style="height: 130vh;">  				
+                <h2 id="video_sr">Video SR</h2>
+				<div class="row">
+				  <div class="column_vid_0">
+					<figure>
+					  <img src="Video/dog_gt.gif" style="width:100%">					  
+					<figcaption>HR Video</figcaption>
+					</figure>
+				  </div>
+				  <div class="column_vid_0">
+										<figure>
+					  <img src="Video/dog_lr.gif" style="width:100%">					  
+					<figcaption>LR Video</figcaption>
+					</figure>
+				  </div>
+				<div class="row">
+				  <div class="column_vid_1">
+										<figure>
+					  <img src="Video/dog_dip.gif" style="width:100%">					  
+					<figcaption>DIP (frame by frame)</figcaption>
+					</figure>
+				  </div>
+				  <div class="column_vid_1">
+										<figure>
+					  <img src="Video/dog_3d_dip.gif" style="width:100%">					  
+					<figcaption>3D-DIP</figcaption>
+					</figure>					
+				  </div>
+				  <div class="column_vid_1">
+				  <figure>
+					  <img src="Video/dog_pip.gif" style="width:100%">					  
+					<figcaption>PIP (Ours)</figcaption>
+					</figure>					
+				  </div>
+				</div>
+				</div>
+			</div>
+			
         </div>
 
 
