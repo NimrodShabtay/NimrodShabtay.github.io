@@ -1,10 +1,100 @@
 <!DOCTYPE html>
-<html>
+<!--
+    Plain-Academic by Vasilios Mavroudis
+    Released under the Simplified BSD License/FreeBSD (2-clause) License.
+    https://github.com/mavroudisv/plain-academic
+-->
+
+<html lang="en">
+<head>
+  <title>PIP</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
+</head>
 <body>
-<h1 style="color:tomato;font-family: Arial; font-size:50px"><center>PIP: Positional-encoding Image Prior<center></h1>
-<h3 style="font-family: Arial; font-size:30px"><center>Nimrod Shabtay*, Eli Schwartz*, Raja Giryes<center></h3>
-<h3 style="font-family: Arial; font-size:30px"><center>Faculty of Electrical Engineering - Tel Aviv University</center></h3>
-<hr>
-<p style="font-family: Arial">Coming soon...</p>
+
+
+<!-- Navigation -->
+	<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+	  <div class="container">
+		<div class="navbar-header">
+		  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+		</div>
+
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		  <ul class="nav navbar-nav">
+				  <li><a href="index.html">Home</a></li>
+				  <li><a href="#denoising">Image Denoising</a></li>
+				  <li><a href="#sr">Image Super-Resolution</a></li> 
+				  <li><a href="#inpainting">Image Inpainting</a></li> 
+                  <li><a href="#dehazing">Image Dehazing</a></li> 
+				  <li><a href="#video">Video Denoising</a></li> 
+				  <li><a href="#video">Video SR</a></li> 
+		  </ul>
+		</div>
+	  </div>
+	</nav>
+  
+  <!-- Page Content -->
+    <div class="container">
+
+        <div class="row">
+
+            <!-- Entries Column -->
+            <div class="col-md-8" style="height: 100vh;">
+                
+                <!-- Main Image -->
+                <h1 style="color:gray;font-family: Arial; font-size:40px"><center>PIP: Positional-encoding Image Prior<center></h1>
+				<h3 style="font-family: Arial; font-size:25px"><center>Nimrod Shabtay*, Eli Schwartz*, Raja Giryes<center></h3>
+				<h3 style="font-family: Arial; font-size:25px"><center>Faculty of Electrical Engineering - Tel Aviv University</center></h3>
+                <center><img class="img-responsive" src="tau_logo.jpg" alt=""><br><center>
+                
+                <div style="margin-top:3%; text-align:justify;">  
+					<h2> Abstract </h2>
+					<p>
+						In Deep Image Prior (DIP), a Convolutional Neural Network (CNN) is fitted to map a latent space to a degraded (e.g. noisy) image but in the process learns to reconstruct the clean image.
+						This phenomenon is attributed to CNN's internal image-prior. We revisit the DIP framework, examining it from the perspective of a neural implicit representation.
+						Motivated by this perspective, we replace the random or learned latent with Fourier-Features (Positional Encoding). We show that thanks to the Fourier features properties, 
+						we can replace the convolution layers with simple pixel-level MLPs. We name this scheme ``Positional Encoding Image Prior" (PIP) 
+						and exhibit that it performs very similarly to DIP on various image-reconstruction tasks with much less parameters required. Additionally, 
+						we demonstrate that PIP can be easily extended to videos, where 3D-DIP struggles and suffers from instability.
+						</p>
+                </div>
+            </div> 
+
+            <!-- Contact Info on the Sidebar -->
+            <div class="col-md-4">
+                <div style="font-family: 'Oswald', sans-serif; font-size: 20px;"><br><br><br>Resources</div><br>
+            </div>
+            
+            
+            <!-- Links on the Sidebar -->
+            <div class="col-md-4" style="margin-top:2%">
+              <dd><a href="#">Code</a></dd> 
+              <dd><a href="#">ArXiv</a></dd>              
+			  <dd><a href="#">bibtex</a></dd>   
+            </div>
+
+            
+        </div>
+
+
+    </div>
+    <!-- /.container -->
+    
+    <!-- Other people may like it too! -->
+    <a style="color:#b5bec9;font-size:0.8em; float:right;" href="https://github.com/mavroudisv/plain-academic">Plain Academic</a> 
+    
 </body>
+
 </html>
