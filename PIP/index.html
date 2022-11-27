@@ -131,8 +131,9 @@ h4 {
                 
                 <!-- Main Image -->
                 <h1 style="color:gray;font-family: Arial; font-size:40px"><center>PIP: Positional-encoding Image Prior<center></h1>
-				<h3 style="font-family: Arial; font-size:25px"><center>Nimrod Shabtay*, Eli Schwartz*, Raja Giryes<center></h3>
-				<h3 style="font-family: Arial; font-size:25px"><center>Faculty of Electrical Engineering - Tel Aviv University</center></h3>				
+				<h3 style="font-family: Arial; font-size:25px"><center><a href='https://www.linkedin.com/in/nimrod-shabtay-76072840/'>Nimrod Shabtay*</a>, 
+				<a href='https://elischwartz.github.io/'>Eli Schwartz*</a>, <a href='https://www.giryes.sites.tau.ac.il/'>Raja Giryes</a><center></h3>
+				<h3 style="font-family: Arial; font-size:25px"><center>Electrical Engineering - Tel Aviv University</center></h3>				
                 <center><img class="img-responsive" src="tau_logo.jpg" alt="" width="100" height="100"><br>				
                 <button><a style="font-family: Arial; font-size:22px" href="#">ArXiv</a></button>
 				<button><a style="font-family: Arial; font-size:22px" href="https://github.com/NimrodShabtay/positional-encoding-image-prior">Code</a></button>
@@ -146,108 +147,102 @@ h4 {
 						we can replace the convolution layers with simple pixel-level MLPs. We name this scheme ``Positional Encoding Image Prior" (PIP) 
 						and exhibit that it performs very similarly to DIP on various image-reconstruction tasks with much less parameters required. Additionally, 
 						we demonstrate that PIP can be easily extended to videos, where 3D-DIP struggles and suffers from instability.
-						</p><br>
-					<div class="col-md-12">    					
-						<div class="row">
-							<div class="column_teaser">								
-									<img src="teaser.png" alt="teaser" style="width:100%">											
-							</div>
-				  <div class="column_teaser">				 
+						</p><br>					   				
+						<center><img src="teaser.png" alt="teaser" style="width:30%"></center>				  
 					<p style="font-family: Arial; font-size:15px; align: left">
 						We offer a novel view of DIP as an implicit model that maps noise to RGB values (left). We suggest that the image-prior, or regularization, stems from the fact that neighboring pixels in the output image (blue and orange in the picture)
 						are a function of almost the same noise box in the input but a bit shifted. With this implicit model perspective, we suggest that one may achieve
 						a similar `image-prior' effect by replacing the input noise with Fourier-Features. As a result, we may use a simple pixel-level MLP that has much less parameters than the DIP CNN and
 						still reconstruct images of the same quality. Remarkably, for video this leads to a significant improvement.
-					</p>				  
-				  </div>											
+					</p>				  				  
                 </div>
             </div> 
 </div>
 			<div class="col-md-12">    
                 <h2 id="denoising"><a href="denoising.html">Image Denoising</h2>				
-				<h4 id="denoising"><a href="denoising.html">More Examples</h4>
+				<h5 id="denoising"><a href="denoising.html"><u>More Examples</u></h5>
 				<div class="row">
 				  <div class="column">
 					<figure>
-						<img src="Images/Baboon_gt.png" alt="GT" style="width:100%">
+						<img src="Images/denoising/kodim12_gt.png" alt="GT" style="width:100%">
 						<figcaption>GT</figcaption>
 					</figure>
 				  </div>
 				  <div class="column">
 				  <figure>
-					<img src="Images/Baboon_noisy.png" alt="Noisy" style="width:100%">
+					<img src="Images/denoising/kodim12_noisy.png" alt="Noisy" style="width:100%">
 				  <figcaption>Noisy</figcaption>
 					</figure>
 				  </div>
 				  <div class="column">
 				  <figure>
-					<img src="Images/Baboon_dip.png" alt="DIP" style="width:100%">
-					<figcaption>DIP</figcaption>
+					<img src="Images/denoising/kodim12_dip.png" alt="DIP" style="width:100%">
+					<figcaption>DIP - 30.2dB (PSNR)</figcaption>
 					</figure>
 				  </div>
 				  <div class="column">
 				  <figure>
-					<img src="Images/Baboon_fixed_ff.png" alt="PIP (Ours)" style="width:100%">
-					<figcaption>PIP (Ours)</figcaption>
+					<img src="Images/denoising/kodim12_pip.png" alt="PIP (Ours)" style="width:100%">
+					<figcaption>PIP (Ours) - 30.48dB (PSNR)</figcaption>
 					</figure>
 				  </div>
 				</div>
 			</div>
 			<div class="col-md-12">    
                 <h2 id="sr"><a href="sr.html">Image Super-Resolution</h2>
-				<h4 id="sr"><a href="sr.html">More Examples</h4>
+				<h5 id="sr"><a href="sr.html"><u>More Examples</u></h5>
 				<div class="row">
 				  <div class="column">
 				  <figure>
-					<img src="Images/Set5_baby_hr.png" alt="GT" style="width:100%">
+					<img src="Images/sr/HR/sr_set5_hr_baby.png" alt="GT" style="width:100%">
 					<figcaption>HR</figcaption>
 					</figure>
 				  </div>
 				  <div class="column">
 				  <figure>
-					<img src="Images/Set5_baby_lr.png" alt="LR" style="width:100%">
+					<img src="Images/sr/x4/sr_set5_lr_baby.png" alt="LR" style="width:100%">
 					<figcaption>LR</figcaption>
 					</figure>
 				  </div>
 				  <div class="column">
 				  <figure>
-					<img src="Images/Set5_baby_dip.png" alt="DIP" style="width:100%">
-					<figcaption>DIP</figcaption>
+					<img src="Images/sr/x4/dip_sr_x4_set5_baby.png" alt="DIP" style="width:100%">
+					<figcaption>DIP - 31.13dB (PSNR)</figcaption>
 					</figure>
 				  </div>
 				  <div class="column">
 				  <figure>
-					<img src="Images/Set5_baby_infer_ff.png" alt="PIP (Ours)" style="width:100%">
-					<figcaption>PIP (Ours)</figcaption>
+					<img src="Images/sr/x4/pip_sr_x4_set5_baby.png" alt="PIP (Ours)" style="width:100%">
+					<figcaption>PIP (Ours) - 32.6dB (PSNR)</figcaption>
 					</figure>
 				  </div>
 				</div>
 			</div>
 			<div class="col-md-12">  			
                 <h2 id="inpainting"><a href="inpainting.html">Image Inpainting</h2>
-				<h4 id="inpainting"><a href="inpainting.html">More Examples</h4>
+				<h5 id="inpainting"><a href="inpainting.html"><u>More Examples</u></h5>
 				<div class="row">
 				  <div class="column">
 				  <figure>
-					<img src="Images/vase_gt.png" alt="GT" style="width:100%">
+					<img src="Images/inpainting/vase_gt.png" alt="GT" style="width:100%">
 					<figcaption>Original</figcaption>
 					</figure>
 				  </div>
 				  <div class="column">
 				  <figure>
-					<img src="Images/vase_masked.png" alt="Mask" style="width:100%">
+					<img src="Images/inpainting/vase_masked.png" alt="Mask" style="width:100%">
 					<figcaption>Masked</figcaption>
 					</figure>
 				  </div>
 				  <div class="column">
 				  <figure>
-					<img src="Images/vase_dip.png" alt="DIP" style="width:100%">
+					<img src="Images/inpainting/vase_dip.png" alt="DIP" style="width:100%">
 					<figcaption>DIP</figcaption>
 					</figure>
 				  </div>
 				  <div class="column">
 				  <figure>
-					<img src="Images/vase_mlp_learned_ff.png" alt="PIP (Ours)" style="width:100%">
+					<img src="Images/inpainting/vase_pip.png" alt="PIP (Ours)" style="width:100%">
 					<figcaption>PIP (Ours)</figcaption>
 					</figure>
 				  </div>
@@ -255,23 +250,23 @@ h4 {
 			</div>
 			<div class="col-md-12">  			
                 <h2 id="dehazing"><a href="dehazing.html">Image Dehazing</h2>
-				<h4 id="dehazing"><a href="dehazing.html">More Examples</h4>
+				<h5 id="dehazing"><a href="dehazing.html"><u>More Examples</u></h5>
 				<div class="row">
 				  <div class="column_doubledip">
 				  <figure>
-					<img src="Images/lviv_original.jpg" alt="Hazy" style="width:100%">
+					<img src="Images/dehazing/lviv.jpg" alt="Hazy" style="width:100%">
 					<figcaption>Hazy</figcaption>
 					</figure>
 				  </div>
 				  <div class="column_doubledip">
 				  <figure>
-					<img src="Images/lviv_1_final.jpg" alt="DoubleDIP (published)" style="width:100%">
+					<img src="Images/dehazing/lviv_dip_paper.jpg" alt="DoubleDIP (published)" style="width:100%">
 					<figcaption>DoubleDIP</figcaption>
 					</figure>
 				  </div>
 				  <div class="column_doubledip">
 				  <figure>
-					<img src="Images/lviv_1_pip_final.jpg" alt="Double-PIP (Ours)" style="width:100%">
+					<img src="Images/dehazing/lviv_pip.jpg" alt="Double-PIP (Ours)" style="width:100%">
 					<figcaption>PIP (Ours)</figcaption>
 					</figure>
 				  </div>
@@ -279,38 +274,31 @@ h4 {
 			</div>
 			<div class="col-md-12" >  				
                 <h2 id="video_denoising"><a href="video_denoising.html">Video Denoising</h2>
-				<h4 id="video_denoising"><a href="video_denoising.html">More Examples</h4>
+				<h5>Results: Avg. PSNR / SSIM-3D</h5>
+				<h5 id="video_denoising"><a href="video_denoising.html"><u>More Examples</u></h5>
 				<div class="row">
-				  <div class="column_vid_0">
+				  <div class="column_vid_1">
 					<figure>
-					  <img src="Video/judo_gt.gif" style="width:100%">					  
+					  <img src="Video/denoising/rollerblade_gt.gif" style="width:100%">					  
 					<figcaption>Original Video</figcaption>
 					</figure>
 				  </div>
-				  <div class="column_vid_0">
+				  <div class="column_vid_1">
 										<figure>
-					  <img src="Video/denoising/judo_noisy.gif" style="width:100%">					  
+					  <img src="Video/denoising/rollerblade_noisy.gif" style="width:100%">					  
 					<figcaption>Noisy Video</figcaption>
 					</figure>
 				  </div>
-				  <!--
-				  <div class="column_vid_0">
+				  <div class="column_vid_1">
 										<figure>
-					  <img src="Video/denoising/judo_dip.gif" style="width:100%">					  
-					<figcaption>DIP (frame by frame)</figcaption>
-					</figure>
-				  </div>
-				  -->
-				  <div class="column_vid_0">
-										<figure>
-					  <img src="Video/denoising/judo_3d_dip.gif" style="width:100%">					  
-					<figcaption>3D-DIP</figcaption>
+					  <img src="Video/denoising/rollerblade_3d_dip.gif" style="width:100%">					  
+					<figcaption>3D-DIP - 25.4/0.84</figcaption>
 					</figure>					
 				  </div>
-				  <div class="column_vid_0">
+				  <div class="column_vid_1">
 				  <figure>
-					  <img src="Video/denoising/judo_pip.gif" style="width:100%">					  
-					<figcaption>PIP (Ours)</figcaption>
+					  <img src="Video/denoising/rollerblade_pip.gif" style="width:100%">					  
+					<figcaption>PIP (Ours) - 30.1/0.91</figcaption>
 					</figure>					
 				  </div>
 				</div>
@@ -318,11 +306,12 @@ h4 {
 			
 			<div class="col-md-12">  				
                 <h2 id="video_sr"><a href="video_sr.html">Video SR</h2>
-				<h4 id="video_sr"><a href="video_sr.html">More Examples</h4>
+				<h5>Results: Avg. PSNR / SSIM-3D</h5>
+				<h5 id="video_sr"><a href="video_sr.html"><u>More Examples</u></h5>
 				<div class="row">
 				  <div class="column_vid_1">
 					<figure>
-					  <img src="Video/dog_gt.gif" style="width:100%">					  
+					  <img src="Video/sr/dog_gt.gif" style="width:100%">					  
 					<figcaption>HR Video</figcaption>
 					</figure>
 				  </div>
@@ -332,24 +321,16 @@ h4 {
 					<figcaption>LR Video</figcaption>
 					</figure>
 				  </div>
-				  <!--
-				  <div class="column_vid_0">
-										<figure>
-					  <img src="Video/dog_dip.gif" style="width:100%">					  
-					<figcaption>DIP (frame by frame)</figcaption>
-					</figure>
-				  </div>
-				  -->
 				  <div class="column_vid_1">
 										<figure>
 					  <img src="Video/sr/dog_3d_dip.gif" style="width:100%">					  
-					<figcaption>3D-DIP</figcaption>
+					<figcaption>3D-DIP - 24.27/0.83</figcaption>
 					</figure>					
 				  </div>
 				  <div class="column_vid_1">
 				  <figure>
 					  <img src="Video/sr/dog_pip.gif" style="width:100%">					  
-					<figcaption>PIP (Ours)</figcaption>
+					<figcaption>PIP (Ours) - 27.06/0.87</figcaption>
 					</figure>					
 				  </div>
 				</div>
