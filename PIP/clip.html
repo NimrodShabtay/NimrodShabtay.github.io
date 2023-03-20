@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<!--
+    Plain-Academic by Vasilios Mavroudis
+    Released under the Simplified BSD License/FreeBSD (2-clause) License.
+    https://github.com/mavroudisv/plain-academic
+-->
+
+<html lang="en">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 5px;
+}
+.column_clip {
+  float: left;
+  width: 30%;
+  padding: 5px;
+}
+.column_text {
+  float: left
+  text-align: center;
+  width: 10%;
+  padding: 5px;
+}
+
+.column_vid_0 {
+  float: left;
+  width: 20%;
+  padding: 5px;
+}
+
+.column_vid_1 {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+button {
+  width: 100px;
+  height: 50px;
+  border-radius: 20px;
+}
+figcaption {
+    background-color: #222;
+    color: #fff;
+    font: italic smaller sans-serif;
+    padding: 3px;
+    text-align: center;
+}
+.crop {
+	width: 200px;
+	height: 150px;
+	overflow: hidden;
+}
+</style>
+<head>
+  <title>PIP</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+
+<!-- Navigation -->
+	<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+	  <div class="container">
+		<div class="navbar-header">
+		  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+		</div>
+
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		  <ul class="nav navbar-nav">
+				<li><a href="index.html">Home</a></li>
+				  <li><a href="denoising.html">Image Denoising</a></li>
+				  <li><a href="sr.html">Image Super-Resolution</a></li> 
+				  <li><a href="inpainting.html">Image Inpainting</a></li> 
+                  <li><a href="dehazing.html">Image Dehazing</a></li> 
+				  <li><a href="clip.html">CLIP Inversion</a></li> 
+				  <li><a href="video_denoising.html">Video Denoising</a></li> 
+				  <li><a href="video_sr.html">Video SR</a></li> 
+		  </ul>
+		</div>
+	  </div>
+	</nav>
+  
+  <!-- Page Content -->
+    <div class="container">
+
+        <div class="row">
+
+            <!-- Entries Column -->            
+			<p style="font-family: Arial; font-size:30px"><b> CLIP Inversion</b></p><br><br>				 
+			<p style="font-family: Arial; font-size:20px"><b> "A moody painting of a lonely duckling"</b></p>				 
+			 <div class="col-md-12">  			                
+				<div class="row">
+				<div class="column_text">
+					<p style="font-family: Arial; font-size:15px"><b> DIP</b></p>		</div>		 
+				<div class="column_clip">
+				  <figure>
+					<img src="Images/CLIP/DIP/a_moody_painting_of_a_lonely_duckling_0.png" alt="DIP" style="width:100%">					
+					</figure>
+				  </div>
+				  <div class="column_clip">
+				  <figure>
+					<img src="Images/CLIP/DIP/a_moody_painting_of_a_lonely_duckling_1.png" alt="DIP" style="width:100%">					
+					</figure>
+				  </div>
+				  <div class="column_clip">
+				  <figure>
+					<img src="Images/CLIP/DIP/a_moody_painting_of_a_lonely_duckling_2.png" alt="DIP" style="width:100%">					
+					</figure>
+				  </div>
+				</div>				  
+				<div class="row">
+				<div class="column_text">
+					<p style="font-family: Arial; font-size:15px"><b> PIP</b></p>		</div>		 
+				<div class="column_clip">
+				  <figure>
+					<img src="Images/CLIP/PIP/a_moody_painting_of_a_lonely_duckling_0.png" alt="PIP" style="width:100%">					
+					</figure>
+				  </div>
+				  <div class="column_clip">
+				  <figure>
+					<img src="Images/CLIP/PIP/a_moody_painting_of_a_lonely_duckling_1.png" alt="PIP" style="width:100%">					
+					</figure>
+				  </div>
+				  <div class="column_clip">
+				  <figure>
+					<img src="Images/CLIP/PIP/a_moody_painting_of_a_lonely_duckling_2.png" alt="PIP" style="width:100%">					
+					</figure>
+				  </div>
+				</div>	
+				<br><br><br><br>				  
+				
+				  </div>
+				
+			<p style="font-family: Arial; font-size:20px"><b> "A dark oil painting of a sheep in the middle of a storm at the sea"</b></p>			 
+			 <div class="col-md-12">  			                
+				<div class="row">
+				<div class="column_text">
+					<p style="font-family: Arial; font-size:15px"><b> DIP</b></p>		</div>		 
+				<div class="column_clip">				
+				  <figure>
+					<img src="Images/CLIP/DIP/a_dark_oil_painting_of_a_sheep_in_a_middle_of_a_storm_at_the_sea_0.png" alt="DIP" style="width:100%">					
+					</figure>
+				  </div>
+				  <div class="column_clip">
+				  <figure>
+					<img src="Images/CLIP/DIP/a_dark_oil_painting_of_a_sheep_in_a_middle_of_a_storm_at_the_sea_1.png" alt="DIP" style="width:100%">					
+					</figure>
+				  </div>
+				  <div class="column_clip">
+				  <figure>
+					<img src="Images/CLIP/DIP/a_dark_oil_painting_of_a_sheep_in_a_middle_of_a_storm_at_the_sea_2.png" alt="DIP" style="width:100%">					
+					</figure>
+				  </div>
+				</div>				  
+				<div class="row">
+				<div class="column_text">
+					<p style="font-family: Arial; font-size:15px"><b> PIP</b></p>		</div>		 
+				<div class="column_clip">
+								  <figure>
+					<img src="Images/CLIP/PIP/a_dark_oil_painting_of_a_sheep_in_a_middle_of_a_storm_at_the_sea_0.png" alt="PIP" style="width:100%">					
+					</figure>
+				  </div>
+				<div class="column_clip">
+				  <figure>
+					<img src="Images/CLIP/PIP/a_dark_oil_painting_of_a_sheep_in_a_middle_of_a_storm_at_the_sea_1.png" alt="PIP" style="width:100%">					
+					</figure>
+				  </div>
+				<div class="column_clip">
+				  <figure>
+					<img src="Images/CLIP/PIP/a_dark_oil_painting_of_a_sheep_in_a_middle_of_a_storm_at_the_sea_2.png" alt="PIP" style="width:100%">					
+					</figure>
+				  </div>
+				</div>
+				<br><br><br><br>				  
+				  </div>				
+
+			<p style="font-family: Arial; font-size:20px"><b> "An oil painting of an elephant sleeping in the desert"</b></p>				 
+			 <div class="col-md-12">  			                
+				<div class="row">
+				<div class="column_text">
+					<p style="font-family: Arial; font-size:15px"><b> DIP</b></p>		</div>		 
+				<div class="column_clip">				  <figure>
+					<img src="Images/CLIP/DIP/an_oil_painting_of_an_elephant_sleeping_in_the_desert_0.png" alt="DIP" style="width:100%">					
+					</figure>
+				  </div>
+				<div class="column_clip">			
+				  <figure>
+					<img src="Images/CLIP/DIP/an_oil_painting_of_an_elephant_sleeping_in_the_desert_1.png" alt="DIP" style="width:100%">					
+					</figure>
+				  </div>
+				<div class="column_clip">			
+				  <figure>
+					<img src="Images/CLIP/DIP/an_oil_painting_of_an_elephant_sleeping_in_the_desert_2.png" alt="DIP" style="width:100%">					
+					</figure>
+				  </div>
+				<div class="column_text">
+					<p style="font-family: Arial; font-size:15px"><b> PIP</b></p>		</div>		 
+				<div class="column_clip">			
+				  <figure>
+					<img src="Images/CLIP/PIP/an_oil_painting_of_an_elephant_sleeping_in_the_desert_0.png" alt="PIP" style="width:100%">					
+					</figure>
+				  </div>
+				<div class="column_clip">			
+				  <figure>
+					<img src="Images/CLIP/PIP/an_oil_painting_of_an_elephant_sleeping_in_the_desert_1.png" alt="PIP" style="width:100%">					
+					</figure>
+				  </div>
+				<div class="column_clip">			
+				  <figure>
+					<img src="Images/CLIP/PIP/an_oil_painting_of_an_elephant_sleeping_in_the_desert_2.png" alt="PIP" style="width:100%">					
+					</figure>
+				  </div>
+				</div>
+				<br><br><br><br>				  
+				  </div>								
+				<p style="font-family: Arial; font-size:20px"><b> "A fire in the forest"</b></p>			 
+			 <div class="col-md-12">  			                
+				<div class="row">
+				<div class="column_text">
+					<p style="font-family: Arial; font-size:15px"><b> DIP</b></p>		</div>		 
+				<div class="column_clip">	
+				  <figure>
+					<img src="Images/CLIP/DIP/A_fire_in_the_forest_0.png" alt="DIP" style="width:100%">					
+					</figure>
+				  </div>
+				<div class="column_clip">	
+				  <figure>
+					<img src="Images/CLIP/DIP/A_fire_in_the_forest_1.png" alt="DIP" style="width:100%">					
+					</figure>
+				  </div>
+				<div class="column_clip">	
+				  <figure>
+					<img src="Images/CLIP/DIP/A_fire_in_the_forest_2.png" alt="DIP" style="width:100%">					
+					</figure>
+				  </div>				
+				</div>
+				<div class="row">
+				<div class="column_text">
+					<p style="font-family: Arial; font-size:15px"><b> PIP</b></p>		</div>		 
+				<div class="column_clip">	
+				  <figure>
+					<img src="Images/CLIP/PIP/A_fire_in_the_forest_0.png" alt="PIP" style="width:100%">					
+					</figure>
+				  </div>
+				<div class="column_clip">	
+				  <figure>
+					<img src="Images/CLIP/PIP/A_fire_in_the_forest_1.png" alt="PIP" style="width:100%">					
+					</figure>
+				  </div>
+				<div class="column_clip">	
+				  <figure>
+					<img src="Images/CLIP/PIP/A_fire_in_the_forest_2.png" alt="PIP" style="width:100%">					
+					</figure>
+				  </div>
+				</div>	
+			  </div>			  
+			</div>				  
+				
+
+    </div>
+    <!-- /.container -->
+    
+    <!-- Other people may like it too! -->
+    <a style="color:#b5bec9;font-size:0.8em; float:right;" href="https://github.com/mavroudisv/plain-academic">Plain Academic</a> 
+    
+</body>
+
+</html>
