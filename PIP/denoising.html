@@ -13,7 +13,7 @@
 
 .column {
   float: left;
-  width: 25%;
+  width: 20%;
   padding: 5px;
 }
 
@@ -107,30 +107,36 @@ figcaption {
         <div class="row">
 
             <!-(Entries Column -->
-			<p style="font-family: Arial; font-size:30px"><b> Image Denoising (Gaussian noise, σ=25)</b></p><br><br>			 
+			<p style="font-family: Arial; font-size:30px"><b> Image Denoising (Gaussian noise, σ=25)</b></p><p>Results in PSNR</p><br><br>			 
 			<div class="col-md-12">    
 				<div class="row">
 				  <div class="column">
 					<figure>
-						<img src="Images/denoising/baboon_gt.png" alt="GT" style="width:100%">
+						<img src="Images/denoising/GT/baboon_gt.png" alt="GT" style="width:100%">
 						<figcaption>GT</figcaption>
 					</figure>
 				  </div>
 				  <div class="column">
 				  <figure>
-					<img src="Images/denoising/baboon_noisy.png" alt="Noisy" style="width:100%">
+					<img src="Images/denoising/Gauss_sigma_25/baboon_noisy.png" alt="Noisy" style="width:100%">
 				  <figcaption>Noisy</figcaption>
 					</figure>
 				  </div>
 				  <div class="column">
 				  <figure>
-					<img src="Images/denoising/dip_baboon.png" alt="DIP" style="width:100%">
+					<img src="Images/denoising/Gauss_sigma_25/dip_baboon.png" alt="DIP" style="width:100%">
 					<figcaption>DIP (22dB)</figcaption>
 					</figure>
 				  </div>
 				  <div class="column">
 				  <figure>
-					<img src="Images/denoising/baboon_pip.png" alt="PIP - Ours" style="width:100%">
+					<img src="Images/denoising/Gauss_sigma_25/baboon_siren.png" alt="SIREN" style="width:100%">
+					<figcaption>SIREN (22.43dB)</figcaption>
+					</figure>
+				  </div>
+				   <div class="column">
+				  <figure>
+					<img src="Images/denoising/Gauss_sigma_25/baboon_pip.png" alt="PIP - Ours" style="width:100%">
 					<figcaption>PIP - Ours (21.52dB)</figcaption>
 					</figure>
 				  </div>
@@ -138,25 +144,31 @@ figcaption {
 				<div class="row">
 				  <div class="column">
 					<figure>
-						<img src="Images/denoising/f16_gt.png" alt="GT" style="width:100%">
+						<img src="Images/denoising/gt/f16_gt.png" alt="GT" style="width:100%">
 						<figcaption>GT</figcaption>
 					</figure>
 				  </div>
 				  <div class="column">
 				  <figure>
-					<img src="Images/denoising/f16_noisy.png" alt="Noisy" style="width:100%">
+					<img src="Images/denoising/Gauss_sigma_25/f16_noisy.png" alt="Noisy" style="width:100%">
 				  <figcaption>Noisy</figcaption>
 					</figure>
 				  </div>
 				  <div class="column">
 				  <figure>
-					<img src="Images/denoising/dip_f16.png" alt="DIP" style="width:100%">
+					<img src="Images/denoising/Gauss_sigma_25/dip_f16.png" alt="DIP" style="width:100%">
 					<figcaption>DIP (30.12dB)</figcaption>
 					</figure>
 				  </div>
 				  <div class="column">
 				  <figure>
-					<img src="Images/denoising/f16_pip.png" alt="PIP - Ours" style="width:100%">
+					<img src="Images/denoising/Gauss_sigma_25/f16_siren.png" alt="SIREN" style="width:100%">
+					<figcaption>SIREN (29.36dB)</figcaption>
+					</figure>
+				  </div>
+				  <div class="column">
+				  <figure>
+					<img src="Images/denoising/Gauss_sigma_25/f16_pip.png" alt="PIP - Ours" style="width:100%">
 					<figcaption>PIP - Ours (29.92dB)</figcaption>
 					</figure>
 				  </div>
@@ -164,25 +176,31 @@ figcaption {
 				<div class="row">
 				  <div class="column">
 					<figure>
-						<img src="Images/denoising/house_gt.png" alt="GT" style="width:100%">
+						<img src="Images/denoising/GT/house_gt.png" alt="GT" style="width:100%">
 						<figcaption>GT</figcaption>
 					</figure>
 				  </div>
 				  <div class="column">
 				  <figure>
-					<img src="Images/denoising/house_noisy.png" alt="Noisy" style="width:100%">
+					<img src="Images/denoising/Gauss_sigma_25/house_noisy.png" alt="Noisy" style="width:100%">
 				  <figcaption>Noisy</figcaption>
 					</figure>
 				  </div>
 				  <div class="column">
 				  <figure>
-					<img src="Images/denoising/dip_house.png" alt="DIP" style="width:100%">
+					<img src="Images/denoising/Gauss_sigma_25/dip_house.png" alt="DIP" style="width:100%">
 					<figcaption>DIP (29.56dB) </figcaption>
 					</figure>
 				  </div>
 				  <div class="column">
 				  <figure>
-					<img src="Images/denoising/house_pip.png" alt="PIP - Ours" style="width:100%">
+					<img src="Images/denoising/Gauss_sigma_25/house_siren.png" alt="SIREN" style="width:100%">
+					<figcaption>SIREN (26.89dB) </figcaption>
+					</figure>
+				  </div>
+				  <div class="column">
+				  <figure>
+					<img src="Images/denoising/Gauss_sigma_25/house_pip.png" alt="PIP - Ours" style="width:100%">
 					<figcaption>PIP - Ours (28.47dB) </figcaption>
 					</figure>
 				  </div>
@@ -190,25 +208,31 @@ figcaption {
 				<div class="row">
 				  <div class="column">
 					<figure>
-						<img src="Images/denoising/lena_gt.png" alt="GT" style="width:100%">
+						<img src="Images/denoising/GT/lena_gt.png" alt="GT" style="width:100%">
 						<figcaption>GT</figcaption>
 					</figure>
 				  </div>
 				  <div class="column">
 				  <figure>
-					<img src="Images/denoising/lena_noisy.png" alt="Noisy" style="width:100%">
+					<img src="Images/denoising/Gauss_sigma_25/lena_noisy.png" alt="Noisy" style="width:100%">
 				  <figcaption>Noisy</figcaption>
 					</figure>
 				  </div>
 				  <div class="column">
 				  <figure>
-					<img src="Images/denoising/dip_lena.png" alt="DIP" style="width:100%">
+					<img src="Images/denoising/Gauss_sigma_25/dip_lena.png" alt="DIP" style="width:100%">
 					<figcaption>DIP (28.89dB) </figcaption>
+					</figure>
+				  </div>
+					<div class="column">
+				  <figure>
+					<img src="Images/denoising/Gauss_sigma_25/lena_siren.png" alt="SIREN" style="width:100%">
+					<figcaption>SIREN (29.76dB) </figcaption>
 					</figure>
 				  </div>
 				  <div class="column">
 				  <figure>
-					<img src="Images/denoising/lena_pip.png" alt="PIP - Ours" style="width:100%">
+					<img src="Images/denoising/Gauss_sigma_25/lena_pip.png" alt="PIP - Ours" style="width:100%">
 					<figcaption>PIP - Ours (29.12dB) </figcaption>
 					</figure>
 				  </div>
@@ -216,25 +240,31 @@ figcaption {
 				<div class="row">
 				  <div class="column">
 					<figure>
-						<img src="Images/denoising/peppers_gt.png" alt="GT" style="width:100%">
+						<img src="Images/denoising/GT/peppers_gt.png" alt="GT" style="width:100%">
 						<figcaption>GT</figcaption>
 					</figure>
 				  </div>
 				  <div class="column">
 				  <figure>
-					<img src="Images/denoising/peppers_noisy.png" alt="Noisy" style="width:100%">
+					<img src="Images/denoising/Gauss_sigma_25/peppers_noisy.png" alt="Noisy" style="width:100%">
 				  <figcaption>Noisy</figcaption>
 					</figure>
 				  </div>
 				  <div class="column">
 				  <figure>
-					<img src="Images/denoising/dip_peppers.png" alt="DIP" style="width:100%">
+					<img src="Images/denoising/Gauss_sigma_25/dip_peppers.png" alt="DIP" style="width:100%">
 					<figcaption>DIP (29.79dB) </figcaption>
+					</figure>
+				  </div>
+				  				  <div class="column">
+				  <figure>
+					<img src="Images/denoising/Gauss_sigma_25/peppers_siren.png" alt="SIREN" style="width:100%">
+					<figcaption>SIREN (28.91dB) </figcaption>
 					</figure>
 				  </div>
 				  <div class="column">
 				  <figure>
-					<img src="Images/denoising/peppers_pip.png" alt="PIP - Ours" style="width:100%">
+					<img src="Images/denoising/Gauss_sigma_25/peppers_pip.png" alt="PIP - Ours" style="width:100%">
 					<figcaption>PIP - Ours (29.77dB) </figcaption>
 					</figure>
 				  </div>
@@ -242,25 +272,31 @@ figcaption {
 				<div class="row">				
 				  <div class="column">
 					<figure>
-						<img src="Images/denoising/kodim01_gt.png" alt="GT" style="width:100%">
+						<img src="Images/denoising/GT/kodim01_gt.png" alt="GT" style="width:100%">
 						<figcaption>GT</figcaption>
 					</figure>
 				  </div>
 				  <div class="column">
 				  <figure>
-					<img src="Images/denoising/kodim01_noisy.png" alt="Noisy" style="width:100%">
+					<img src="Images/denoising/Gauss_sigma_25/kodim01_noisy.png" alt="Noisy" style="width:100%">
 				  <figcaption>Noisy</figcaption>
 					</figure>
 				  </div>
 				  <div class="column">
 				  <figure>
-					<img src="Images/denoising/dip_kodim01.png" alt="DIP" style="width:100%">
+					<img src="Images/denoising/Gauss_sigma_25/dip_kodim01.png" alt="DIP" style="width:100%">
 					<figcaption>DIP (25.67dB) </figcaption>
+					</figure>
+				  </div>
+				    <div class="column">
+				  <figure>
+					<img src="Images/denoising/Gauss_sigma_25/kodim01_siren.png" alt="SIREN" style="width:100%">
+					<figcaption>SIREN (24.87dB) </figcaption>
 					</figure>
 				  </div>
 				  <div class="column">
 				  <figure>
-					<img src="Images/denoising/kodim01_pip.png" alt="PIP - Ours" style="width:100%">
+					<img src="Images/denoising/Gauss_sigma_25/kodim01_pip.png" alt="PIP - Ours" style="width:100%">
 					<figcaption>PIP - Ours (25.27dB) </figcaption>
 					</figure>
 				  </div>
@@ -268,25 +304,32 @@ figcaption {
 							<div class="row">				
 				  <div class="column">
 					<figure>
-						<img src="Images/denoising/kodim02_gt.png" alt="GT" style="width:100%">
+						<img src="Images/denoising/GT/kodim02_gt.png" alt="GT" style="width:100%">
 						<figcaption>GT</figcaption>
 					</figure>
 				  </div>
 				  <div class="column">
 				  <figure>
-					<img src="Images/denoising/kodim02_noisy.png" alt="Noisy" style="width:100%">
+					<img src="Images/denoising/Gauss_sigma_25/kodim02_noisy.png" alt="Noisy" style="width:100%">
 				  <figcaption>Noisy</figcaption>
 					</figure>
 				  </div>
-				  <div class="column">
+				  			  <div class="column">
 				  <figure>
-					<img src="Images/denoising/dip_kodim02.png" alt="DIP" style="width:100%">
+					<img src="Images/denoising/Gauss_sigma_25/dip_kodim02.png" alt="DIP" style="width:100%">
 					<figcaption>DIP (30.19dB) </figcaption>
 					</figure>
 				  </div>
+					<div class="column">
+				  <figure>
+					<img src="Images/denoising/Gauss_sigma_25/kodim02_siren.png" alt="SIREN" style="width:100%">
+					<figcaption>SIREN (29.46dB) </figcaption>
+					</figure>
+				  </div>
+
 				  <div class="column">
 				  <figure>
-					<img src="Images/denoising/kodim02_pip.png" alt="PIP - Ours" style="width:100%">
+					<img src="Images/denoising/Gauss_sigma_25/kodim02_pip.png" alt="PIP - Ours" style="width:100%">
 					<figcaption>PIP - Ours (29.59dB) </figcaption>
 					</figure>
 				  </div>
@@ -294,25 +337,31 @@ figcaption {
 							<div class="row">				
 				  <div class="column">
 					<figure>
-						<img src="Images/denoising/kodim03_gt.png" alt="GT" style="width:100%">
+						<img src="Images/denoising/GT/kodim03_gt.png" alt="GT" style="width:100%">
 						<figcaption>GT</figcaption>
 					</figure>
 				  </div>
 				  <div class="column">
 				  <figure>
-					<img src="Images/denoising/kodim03_noisy.png" alt="Noisy" style="width:100%">
+					<img src="Images/denoising/Gauss_sigma_25/kodim03_noisy.png" alt="Noisy" style="width:100%">
 				  <figcaption>Noisy</figcaption>
 					</figure>
 				  </div>
 				  <div class="column">
 				  <figure>
-					<img src="Images/denoising/dip_kodim03.png" alt="DIP" style="width:100%">
+					<img src="Images/denoising/Gauss_sigma_25/dip_kodim03.png" alt="DIP" style="width:100%">
 					<figcaption>DIP (30.62dB) </figcaption>
+					</figure>
+				  </div>
+					<div class="column">
+				  <figure>
+					<img src="Images/denoising/Gauss_sigma_25/kodim03_siren.png" alt="SIREN" style="width:100%">
+					<figcaption>SIREN (30.49dB) </figcaption>
 					</figure>
 				  </div>
 				  <div class="column">
 				  <figure>
-					<img src="Images/denoising/kodim03_pip.png" alt="PIP - Ours" style="width:100%">
+					<img src="Images/denoising/Gauss_sigma_25/kodim03_pip.png" alt="PIP - Ours" style="width:100%">
 					<figcaption>PIP - Ours (30.41dB) </figcaption>
 					</figure>
 				  </div>
@@ -320,38 +369,643 @@ figcaption {
 							<div class="row">				
 				  <div class="column">
 					<figure>
-						<img src="Images/denoising/kodim12_gt.png" alt="GT" style="width:100%">
+						<img src="Images/denoising/GT/kodim12_gt.png" alt="GT" style="width:100%">
 						<figcaption>GT</figcaption>
 					</figure>
 				  </div>
 				  <div class="column">
 				  <figure>
-					<img src="Images/denoising/kodim12_noisy.png" alt="Noisy" style="width:100%">
+					<img src="Images/denoising/Gauss_sigma_25/kodim12_noisy.png" alt="Noisy" style="width:100%">
 				  <figcaption>Noisy</figcaption>
 					</figure>
 				  </div>
 				  <div class="column">
 				  <figure>
-					<img src="Images/denoising/kodim12_dip.png" alt="DIP" style="width:100%">
+					<img src="Images/denoising/Gauss_sigma_25/kodim12_dip.png" alt="DIP" style="width:100%">
 					<figcaption>DIP (30.2dB) </figcaption>
 					</figure>
 				  </div>
 				  <div class="column">
 				  <figure>
-					<img src="Images/denoising/kodim12_pip.png" alt="PIP - Ours" style="width:100%">
+				  				  <figure>
+					<img src="Images/denoising/Gauss_sigma_25/kodim12_siren.png" alt="SIREN" style="width:100%">
+					<figcaption>SIREN (29.47dB) </figcaption>
+					</figure>
+				  </div>
+				  <div class="column">
+				  <figure>
+					<img src="Images/denoising/Gauss_sigma_25/kodim12_pip.png" alt="PIP - Ours" style="width:100%">
 					<figcaption>PIP - Ours (30.48dB) </figcaption>
 					</figure>
 				  </div>
 				</div>
-			</div>
-		<p>Results in PSNR</p>
+			</div>		
         </div>
-
-
-    </div>
-    <!-(/.container -->
+    </div>    
     
-    <!-- Other people may like it too! -->
+	<br><br><br>
+	 <div class="container">
+
+        <div class="row">
+            
+			<p style="font-family: Arial; font-size:30px"><b> Image Denoising (Gaussian noise, σ=10)</b></p><p>Results in PSNR</p><br><br>			 
+			<div class="col-md-12">    
+				<div class="row">
+				  <div class="column">
+					<figure>
+						<img src="Images/denoising/GT/baboon_gt.png" alt="GT" style="width:100%">
+						<figcaption>GT</figcaption>
+					</figure>
+				  </div>
+				  <div class="column">
+				  <figure>
+					<img src="Images/denoising/Gauss_sigma_10/baboon_noisy.png" alt="Noisy" style="width:100%">
+				  <figcaption>Noisy</figcaption>
+					</figure>
+				  </div>
+				  <div class="column">
+				  <figure>
+					<img src="Images/denoising/Gauss_sigma_10/baboon_dip.png" alt="DIP" style="width:100%">
+					<figcaption>DIP (22.24dB)</figcaption>
+					</figure>
+				  </div>
+				  <div class="column">
+				  <figure>
+					<img src="Images/denoising/Gauss_sigma_10/baboon_siren.png" alt="SIREN" style="width:100%">
+					<figcaption>SIREN (22.82dB)</figcaption>
+					</figure>
+				  </div>
+				   <div class="column">
+				  <figure>
+					<img src="Images/denoising/Gauss_sigma_10/baboon_pip.png" alt="PIP - Ours" style="width:100%">
+					<figcaption>PIP - Ours (22.88dB)</figcaption>
+					</figure>
+				  </div>
+				</div>
+				<div class="row">
+				  <div class="column">
+					<figure>
+						<img src="Images/denoising/gt/f16_gt.png" alt="GT" style="width:100%">
+						<figcaption>GT</figcaption>
+					</figure>
+				  </div>
+				  <div class="column">
+				  <figure>
+					<img src="Images/denoising/Gauss_sigma_10/f16_noisy.png" alt="Noisy" style="width:100%">
+				  <figcaption>Noisy</figcaption>
+					</figure>
+				  </div>
+				  <div class="column">
+				  <figure>
+					<img src="Images/denoising/Gauss_sigma_10/f16_dip.png" alt="DIP" style="width:100%">
+					<figcaption>DIP (30.94dB)</figcaption>
+					</figure>
+				  </div>
+				  <div class="column">
+				  <figure>
+					<img src="Images/denoising/Gauss_sigma_10/f16_siren.png" alt="SIREN" style="width:100%">
+					<figcaption>SIREN (30.39dB)</figcaption>
+					</figure>
+				  </div>
+				  <div class="column">
+				  <figure>
+					<img src="Images/denoising/Gauss_sigma_10/f16_pip.png" alt="PIP - Ours" style="width:100%">
+					<figcaption>PIP - Ours (31.54dB)</figcaption>
+					</figure>
+				  </div>
+				</div>
+				<div class="row">
+				  <div class="column">
+					<figure>
+						<img src="Images/denoising/GT/house_gt.png" alt="GT" style="width:100%">
+						<figcaption>GT</figcaption>
+					</figure>
+				  </div>
+				  <div class="column">
+				  <figure>
+					<img src="Images/denoising/Gauss_sigma_10/house_noisy.png" alt="Noisy" style="width:100%">
+				  <figcaption>Noisy</figcaption>
+					</figure>
+				  </div>
+				  <div class="column">
+				  <figure>
+					<img src="Images/denoising/Gauss_sigma_10/house_dip.png" alt="DIP" style="width:100%">
+					<figcaption>DIP (32.89dB) </figcaption>
+					</figure>
+				  </div>
+				  <div class="column">
+				  <figure>
+					<img src="Images/denoising/Gauss_sigma_10/house_siren.png" alt="SIREN" style="width:100%">
+					<figcaption>SIREN (33.61dB) </figcaption>
+					</figure>
+				  </div>
+				  <div class="column">
+				  <figure>
+					<img src="Images/denoising/Gauss_sigma_10/house_pip.png" alt="PIP - Ours" style="width:100%">
+					<figcaption>PIP - Ours (32.76dB) </figcaption>
+					</figure>
+				  </div>
+				</div>
+				<div class="row">
+				  <div class="column">
+					<figure>
+						<img src="Images/denoising/GT/lena_gt.png" alt="GT" style="width:100%">
+						<figcaption>GT</figcaption>
+					</figure>
+				  </div>
+				  <div class="column">
+				  <figure>
+					<img src="Images/denoising/Gauss_sigma_10/lena_noisy.png" alt="Noisy" style="width:100%">
+				  <figcaption>Noisy</figcaption>
+					</figure>
+				  </div>
+				  <div class="column">
+				  <figure>
+					<img src="Images/denoising/Gauss_sigma_10/lena_dip.png" alt="DIP" style="width:100%">
+					<figcaption>DIP (29.73dB) </figcaption>
+					</figure>
+				  </div>
+					<div class="column">
+				  <figure>
+					<img src="Images/denoising/Gauss_sigma_10/lena_siren.png" alt="SIREN" style="width:100%">
+					<figcaption>SIREN (31.52dB) </figcaption>
+					</figure>
+				  </div>
+				  <div class="column">
+				  <figure>
+					<img src="Images/denoising/Gauss_sigma_10/lena_pip.png" alt="PIP - Ours" style="width:100%">
+					<figcaption>PIP - Ours (30.73dB) </figcaption>
+					</figure>
+				  </div>
+				</div>
+				<div class="row">
+				  <div class="column">
+					<figure>
+						<img src="Images/denoising/GT/peppers_gt.png" alt="GT" style="width:100%">
+						<figcaption>GT</figcaption>
+					</figure>
+				  </div>
+				  <div class="column">
+				  <figure>
+					<img src="Images/denoising/Gauss_sigma_10/peppers_noisy.png" alt="Noisy" style="width:100%">
+				  <figcaption>Noisy</figcaption>
+					</figure>
+				  </div>
+				  <div class="column">
+				  <figure>
+					<img src="Images/denoising/Gauss_sigma_10/peppers_dip.png" alt="DIP" style="width:100%">
+					<figcaption>DIP (30.78dB) </figcaption>
+					</figure>
+				  </div>
+				  				  <div class="column">
+				  <figure>
+					<img src="Images/denoising/Gauss_sigma_10/peppers_siren.png" alt="SIREN" style="width:100%">
+					<figcaption>SIREN (31.00dB) </figcaption>
+					</figure>
+				  </div>
+				  <div class="column">
+				  <figure>
+					<img src="Images/denoising/Gauss_sigma_10/peppers_pip.png" alt="PIP - Ours" style="width:100%">
+					<figcaption>PIP - Ours (31.8dB) </figcaption>
+					</figure>
+				  </div>
+				</div>
+				<div class="row">				
+				  <div class="column">
+					<figure>
+						<img src="Images/denoising/GT/kodim01_gt.png" alt="GT" style="width:100%">
+						<figcaption>GT</figcaption>
+					</figure>
+				  </div>
+				  <div class="column">
+				  <figure>
+					<img src="Images/denoising/Gauss_sigma_10/kodim01_noisy.png" alt="Noisy" style="width:100%">
+				  <figcaption>Noisy</figcaption>
+					</figure>
+				  </div>
+				  <div class="column">
+				  <figure>
+					<img src="Images/denoising/Gauss_sigma_10/kodim01_dip.png" alt="DIP" style="width:100%">
+					<figcaption>DIP (26.08dB) </figcaption>
+					</figure>
+				  </div>
+				    <div class="column">
+				  <figure>
+					<img src="Images/denoising/Gauss_sigma_10/kodim01_siren.png" alt="SIREN" style="width:100%">
+					<figcaption>SIREN (25.45dB) </figcaption>
+					</figure>
+				  </div>
+				  <div class="column">
+				  <figure>
+					<img src="Images/denoising/Gauss_sigma_10/kodim01_pip.png" alt="PIP - Ours" style="width:100%">
+					<figcaption>PIP - Ours (26.13dB) </figcaption>
+					</figure>
+				  </div>
+				</div>
+							<div class="row">				
+				  <div class="column">
+					<figure>
+						<img src="Images/denoising/GT/kodim02_gt.png" alt="GT" style="width:100%">
+						<figcaption>GT</figcaption>
+					</figure>
+				  </div>
+				  <div class="column">
+				  <figure>
+					<img src="Images/denoising/Gauss_sigma_10/kodim02_noisy.png" alt="Noisy" style="width:100%">
+				  <figcaption>Noisy</figcaption>
+					</figure>
+				  </div>
+				  			  <div class="column">
+				  <figure>
+					<img src="Images/denoising/Gauss_sigma_10/kodim02_dip.png" alt="DIP" style="width:100%">
+					<figcaption>DIP (30.97dB) </figcaption>
+					</figure>
+				  </div>
+					<div class="column">
+				  <figure>
+					<img src="Images/denoising/Gauss_sigma_10/kodim02_siren.png" alt="SIREN" style="width:100%">
+					<figcaption>SIREN (30.97dB) </figcaption>
+					</figure>
+				  </div>
+
+				  <div class="column">
+				  <figure>
+					<img src="Images/denoising/Gauss_sigma_10/kodim02_pip.png" alt="PIP - Ours" style="width:100%">
+					<figcaption>PIP - Ours (31.05dB) </figcaption>
+					</figure>
+				  </div>
+				</div>
+							<div class="row">				
+				  <div class="column">
+					<figure>
+						<img src="Images/denoising/GT/kodim03_gt.png" alt="GT" style="width:100%">
+						<figcaption>GT</figcaption>
+					</figure>
+				  </div>
+				  <div class="column">
+				  <figure>
+					<img src="Images/denoising/Gauss_sigma_10/kodim03_noisy.png" alt="Noisy" style="width:100%">
+				  <figcaption>Noisy</figcaption>
+					</figure>
+				  </div>
+				  <div class="column">
+				  <figure>
+					<img src="Images/denoising/Gauss_sigma_10/kodim03_dip.png" alt="DIP" style="width:100%">
+					<figcaption>DIP (31.22dB) </figcaption>
+					</figure>
+				  </div>
+					<div class="column">
+				  <figure>
+					<img src="Images/denoising/Gauss_sigma_10/kodim03_siren.png" alt="SIREN" style="width:100%">
+					<figcaption>SIREN (32.02dB) </figcaption>
+					</figure>
+				  </div>
+				  <div class="column">
+				  <figure>
+					<img src="Images/denoising/Gauss_sigma_10/kodim03_pip.png" alt="PIP - Ours" style="width:100%">
+					<figcaption>PIP - Ours (32.03dB) </figcaption>
+					</figure>
+				  </div>
+				</div>
+							<div class="row">				
+				  <div class="column">
+					<figure>
+						<img src="Images/denoising/GT/kodim12_gt.png" alt="GT" style="width:100%">
+						<figcaption>GT</figcaption>
+					</figure>
+				  </div>
+				  <div class="column">
+				  <figure>
+					<img src="Images/denoising/Gauss_sigma_10/kodim12_noisy.png" alt="Noisy" style="width:100%">
+				  <figcaption>Noisy</figcaption>
+					</figure>
+				  </div>
+				  <div class="column">
+				  <figure>
+					<img src="Images/denoising/Gauss_sigma_10/kodim12_dip.png" alt="DIP" style="width:100%">
+					<figcaption>DIP (30.69dB) </figcaption>
+					</figure>
+				  </div>
+				  <div class="column">
+				  <figure>
+				  				  <figure>
+					<img src="Images/denoising/Gauss_sigma_10/kodim12_siren.png" alt="SIREN" style="width:100%">
+					<figcaption>SIREN (30.32dB) </figcaption>
+					</figure>
+				  </div>
+				  <div class="column">
+				  <figure>
+					<img src="Images/denoising/Gauss_sigma_10/kodim12_pip.png" alt="PIP - Ours" style="width:100%">
+					<figcaption>PIP - Ours (31.17dB) </figcaption>
+					</figure>
+				  </div>
+				</div>
+			</div>
+        </div>
+		</div>
+		
+		<br><br><br>
+	 <div class="container">
+
+        <div class="row">
+            
+			<p style="font-family: Arial; font-size:30px"><b> Image Denoising (Poisson noise)</b></p><p>Results in PSNR</p><br><br>			 
+			
+			<div class="col-md-12">    
+				<div class="row">
+				  <div class="column">
+					<figure>
+						<img src="Images/denoising/GT/baboon_gt.png" alt="GT" style="width:100%">
+						<figcaption>GT</figcaption>
+					</figure>
+				  </div>
+				  <div class="column">
+				  <figure>
+					<img src="Images/denoising/Poisson/baboon_noisy.png" alt="Noisy" style="width:100%">
+				  <figcaption>Noisy</figcaption>
+					</figure>
+				  </div>
+				  <div class="column">
+				  <figure>
+					<img src="Images/denoising/Poisson/baboon_dip.png" alt="DIP" style="width:100%">
+					<figcaption>DIP (22.21dB)</figcaption>
+					</figure>
+				  </div>
+				  <div class="column">
+				  <figure>
+					<img src="Images/denoising/Poisson/baboon_siren.png" alt="SIREN" style="width:100%">
+					<figcaption>SIREN (22.79dB)</figcaption>
+					</figure>
+				  </div>
+				   <div class="column">
+				  <figure>
+					<img src="Images/denoising/Poisson/baboon_pip.png" alt="PIP - Ours" style="width:100%">
+					<figcaption>PIP - Ours (23.03dB)</figcaption>
+					</figure>
+				  </div>
+				</div>
+				<div class="row">
+				  <div class="column">
+					<figure>
+						<img src="Images/denoising/gt/f16_gt.png" alt="GT" style="width:100%">
+						<figcaption>GT</figcaption>
+					</figure>
+				  </div>
+				  <div class="column">
+				  <figure>
+					<img src="Images/denoising/Poisson/f16_noisy.png" alt="Noisy" style="width:100%">
+				  <figcaption>Noisy</figcaption>
+					</figure>
+				  </div>
+				  <div class="column">
+				  <figure>
+					<img src="Images/denoising/Poisson/f16_dip.png" alt="DIP" style="width:100%">
+					<figcaption>DIP (30.91dB)</figcaption>
+					</figure>
+				  </div>
+				  <div class="column">
+				  <figure>
+					<img src="Images/denoising/Poisson/f16_siren.png" alt="SIREN" style="width:100%">
+					<figcaption>SIREN (29.88dB)</figcaption>
+					</figure>
+				  </div>
+				  <div class="column">
+				  <figure>
+					<img src="Images/denoising/Poisson/f16_pip.png" alt="PIP - Ours" style="width:100%">
+					<figcaption>PIP - Ours (33.04dB)</figcaption>
+					</figure>
+				  </div>
+				</div>
+				<div class="row">
+				  <div class="column">
+					<figure>
+						<img src="Images/denoising/GT/house_gt.png" alt="GT" style="width:100%">
+						<figcaption>GT</figcaption>
+					</figure>
+				  </div>
+				  <div class="column">
+				  <figure>
+					<img src="Images/denoising/Poisson/house_noisy.png" alt="Noisy" style="width:100%">
+				  <figcaption>Noisy</figcaption>
+					</figure>
+				  </div>
+				  <div class="column">
+				  <figure>
+					<img src="Images/denoising/Poisson/house_dip.png" alt="DIP" style="width:100%">
+					<figcaption>DIP (32.57dB) </figcaption>
+					</figure>
+				  </div>
+				  <div class="column">
+				  <figure>
+					<img src="Images/denoising/Poisson/house_siren.png" alt="SIREN" style="width:100%">
+					<figcaption>SIREN (32.93dB) </figcaption>
+					</figure>
+				  </div>
+				  <div class="column">
+				  <figure>
+					<img src="Images/denoising/Poisson/house_pip.png" alt="PIP - Ours" style="width:100%">
+					<figcaption>PIP - Ours (32.81dB) </figcaption>
+					</figure>
+				  </div>
+				</div>
+				<div class="row">
+				  <div class="column">
+					<figure>
+						<img src="Images/denoising/GT/lena_gt.png" alt="GT" style="width:100%">
+						<figcaption>GT</figcaption>
+					</figure>
+				  </div>
+				  <div class="column">
+				  <figure>
+					<img src="Images/denoising/Poisson/lena_noisy.png" alt="Noisy" style="width:100%">
+				  <figcaption>Noisy</figcaption>
+					</figure>
+				  </div>
+				  <div class="column">
+				  <figure>
+					<img src="Images/denoising/Poisson/lena_dip.png" alt="DIP" style="width:100%">
+					<figcaption>DIP (29.73dB) </figcaption>
+					</figure>
+				  </div>
+					<div class="column">
+				  <figure>
+					<img src="Images/denoising/Poisson/lena_siren.png" alt="SIREN" style="width:100%">
+					<figcaption>SIREN (31.57dB) </figcaption>
+					</figure>
+				  </div>
+				  <div class="column">
+				  <figure>
+					<img src="Images/denoising/Poisson/lena_pip.png" alt="PIP - Ours" style="width:100%">
+					<figcaption>PIP - Ours (29.28dB) </figcaption>
+					</figure>
+				  </div>
+				</div>
+				<div class="row">
+				  <div class="column">
+					<figure>
+						<img src="Images/denoising/GT/peppers_gt.png" alt="GT" style="width:100%">
+						<figcaption>GT</figcaption>
+					</figure>
+				  </div>
+				  <div class="column">
+				  <figure>
+					<img src="Images/denoising/Poisson/peppers_noisy.png" alt="Noisy" style="width:100%">
+				  <figcaption>Noisy</figcaption>
+					</figure>
+				  </div>
+				  <div class="column">
+				  <figure>
+					<img src="Images/denoising/Poisson/peppers_dip.png" alt="DIP" style="width:100%">
+					<figcaption>DIP (30.79dB) </figcaption>
+					</figure>
+				  </div>
+				  				  <div class="column">
+				  <figure>
+					<img src="Images/denoising/Poisson/peppers_siren.png" alt="SIREN" style="width:100%">
+					<figcaption>SIREN (30.69dB) </figcaption>
+					</figure>
+				  </div>
+				  <div class="column">
+				  <figure>
+					<img src="Images/denoising/Poisson/peppers_pip.png" alt="PIP - Ours" style="width:100%">
+					<figcaption>PIP - Ours (31.41dB) </figcaption>
+					</figure>
+				  </div>
+				</div>
+				<div class="row">				
+				  <div class="column">
+					<figure>
+						<img src="Images/denoising/GT/kodim01_gt.png" alt="GT" style="width:100%">
+						<figcaption>GT</figcaption>
+					</figure>
+				  </div>
+				  <div class="column">
+				  <figure>
+					<img src="Images/denoising/Poisson/kodim01_noisy.png" alt="Noisy" style="width:100%">
+				  <figcaption>Noisy</figcaption>
+					</figure>
+				  </div>
+				  <div class="column">
+				  <figure>
+					<img src="Images/denoising/Poisson/kodim01_dip.png" alt="DIP" style="width:100%">
+					<figcaption>DIP (26.12dB) </figcaption>
+					</figure>
+				  </div>
+				    <div class="column">
+				  <figure>
+					<img src="Images/denoising/Poisson/kodim01_siren.png" alt="SIREN" style="width:100%">
+					<figcaption>SIREN (25.44dB) </figcaption>
+					</figure>
+				  </div>
+				  <div class="column">
+				  <figure>
+					<img src="Images/denoising/Poisson/kodim01_pip.png" alt="PIP - Ours" style="width:100%">
+					<figcaption>PIP - Ours (25.97) </figcaption>
+					</figure>
+				  </div>
+				</div>
+							<div class="row">				
+				  <div class="column">
+					<figure>
+						<img src="Images/denoising/GT/kodim02_gt.png" alt="GT" style="width:100%">
+						<figcaption>GT</figcaption>
+					</figure>
+				  </div>
+				  <div class="column">
+				  <figure>
+					<img src="Images/denoising/Poisson/kodim02_noisy.png" alt="Noisy" style="width:100%">
+				  <figcaption>Noisy</figcaption>
+					</figure>
+				  </div>
+				  			  <div class="column">
+				  <figure>
+					<img src="Images/denoising/Poisson/kodim02_dip.png" alt="DIP" style="width:100%">
+					<figcaption>DIP (30.94dB) </figcaption>
+					</figure>
+				  </div>
+					<div class="column">
+				  <figure>
+					<img src="Images/denoising/Poisson/kodim02_siren.png" alt="SIREN" style="width:100%">
+					<figcaption>SIREN (30.97dB) </figcaption>
+					</figure>
+				  </div>
+
+				  <div class="column">
+				  <figure>
+					<img src="Images/denoising/Poisson/kodim02_pip.png" alt="PIP - Ours" style="width:100%">
+					<figcaption>PIP - Ours (31.19dB) </figcaption>
+					</figure>
+				  </div>
+				</div>
+							<div class="row">				
+				  <div class="column">
+					<figure>
+						<img src="Images/denoising/GT/kodim03_gt.png" alt="GT" style="width:100%">
+						<figcaption>GT</figcaption>
+					</figure>
+				  </div>
+				  <div class="column">
+				  <figure>
+					<img src="Images/denoising/Poisson/kodim03_noisy.png" alt="Noisy" style="width:100%">
+				  <figcaption>Noisy</figcaption>
+					</figure>
+				  </div>
+				  <div class="column">
+				  <figure>
+					<img src="Images/denoising/Poisson/kodim03_dip.png" alt="DIP" style="width:100%">
+					<figcaption>DIP (31.42dB) </figcaption>
+					</figure>
+				  </div>
+					<div class="column">
+				  <figure>
+					<img src="Images/denoising/Poisson/kodim03_siren.png" alt="SIREN" style="width:100%">
+					<figcaption>SIREN (31.95dB) </figcaption>
+					</figure>
+				  </div>
+				  <div class="column">
+				  <figure>
+					<img src="Images/denoising/Poisson/kodim03_pip.png" alt="PIP - Ours" style="width:100%">
+					<figcaption>PIP - Ours (31.69dB) </figcaption>
+					</figure>
+				  </div>
+				</div>
+							<div class="row">				
+				  <div class="column">
+					<figure>
+						<img src="Images/denoising/GT/kodim12_gt.png" alt="GT" style="width:100%">
+						<figcaption>GT</figcaption>
+					</figure>
+				  </div>
+				  <div class="column">
+				  <figure>
+					<img src="Images/denoising/Poisson/kodim012_noisy.png" alt="Noisy" style="width:100%">
+				  <figcaption>Noisy</figcaption>
+					</figure>
+				  </div>
+				  <div class="column">
+				  <figure>
+					<img src="Images/denoising/Poisson/kodim012_dip.png" alt="DIP" style="width:100%">
+					<figcaption>DIP (30.54dB) </figcaption>
+					</figure>
+				  </div>
+				  <div class="column">
+				  <figure>
+				  				  <figure>
+					<img src="Images/denoising/Poisson/kodim12_siren.png" alt="SIREN" style="width:100%">
+					<figcaption>SIREN (30.17dB) </figcaption>
+					</figure>
+				  </div>
+				  <div class="column">
+				  <figure>
+					<img src="Images/denoising/Poisson/kodim012_pip.png" alt="PIP - Ours" style="width:100%">
+					<figcaption>PIP - Ours (31.19dB) </figcaption>
+					</figure>
+				  </div>
+				</div>
+			</div>
+        </div>
+		</div>
+		    
     <a style="color:#b5bec9;font-size:0.8em; float:right;" href="https://github.com/mavroudisv/plain-academic">Plain Academic</a> 
     
 </body>
