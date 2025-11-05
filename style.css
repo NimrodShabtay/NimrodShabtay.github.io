@@ -1,0 +1,270 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+    line-height: 1.7;
+    color: #333;
+    background-color: #ffffff;
+    font-size: 16px;
+}
+
+a {
+    color: #0066cc;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+a:hover {
+    color: #004499;
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+}
+
+/* Profile Section */
+.profile-section {
+    margin-bottom: 4rem;
+}
+
+.profile-image {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1.5rem;
+    border: 3px solid #f0f0f0;
+}
+
+.name {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: #1a1a1a;
+}
+
+.bio {
+    margin-bottom: 1.5rem;
+    font-size: 1.05rem;
+}
+
+.bio p {
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+.contact {
+    margin-bottom: 1.5rem;
+    color: #555;
+}
+
+.links {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+}
+
+.link-button {
+    display: inline-block;
+    padding: 0.5rem 1.2rem;
+    background-color: #f0f0f0;
+    color: #333;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.2s;
+}
+
+.link-button:hover {
+    background-color: #e0e0e0;
+    text-decoration: none;
+}
+
+/* Publications Section */
+.publications-section {
+    margin-bottom: 3rem;
+}
+
+.section-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: #1a1a1a;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 0.5rem;
+}
+
+.publications-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.publication {
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.publication:last-child {
+    border-bottom: none;
+}
+
+.pub-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+    color: #1a1a1a;
+}
+
+.pub-title a {
+    color: #1a1a1a;
+    text-decoration: none;
+}
+
+.pub-title a:hover {
+    color: #0066cc;
+}
+
+.pub-authors {
+    color: #555;
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+}
+
+.pub-venue {
+    font-style: italic;
+    color: #666;
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+}
+
+.pub-links {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 0.5rem;
+}
+
+.pub-link {
+    display: inline-block;
+    padding: 0.25rem 0.8rem;
+    background-color: #f8f8f8;
+    color: #0066cc;
+    border: 1px solid #e0e0e0;
+    border-radius: 3px;
+    font-size: 0.85rem;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+.pub-link:hover {
+    background-color: #0066cc;
+    color: white;
+    border-color: #0066cc;
+    text-decoration: none;
+}
+
+.pub-meta {
+    color: #888;
+    font-size: 0.9rem;
+    margin-top: 0.3rem;
+}
+
+/* Loading State */
+.loading {
+    text-align: center;
+    padding: 3rem 0;
+    color: #666;
+}
+
+.spinner {
+    border: 3px solid #f3f3f3;
+    border-top: 3px solid #0066cc;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    margin: 0 auto 1rem;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.error-message {
+    background-color: #fff3cd;
+    border: 1px solid #ffc107;
+    color: #856404;
+    padding: 1rem;
+    border-radius: 4px;
+    margin: 1rem 0;
+}
+
+/* Footer */
+.footer {
+    margin-top: 4rem;
+    padding-top: 2rem;
+    border-top: 1px solid #e0e0e0;
+    text-align: center;
+    color: #888;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 2rem 1rem;
+    }
+
+    .name {
+        font-size: 2rem;
+    }
+
+    .profile-image {
+        width: 150px;
+        height: 150px;
+    }
+
+    .bio {
+        font-size: 1rem;
+    }
+
+    .pub-title {
+        font-size: 1rem;
+    }
+
+    .links {
+        flex-direction: column;
+    }
+
+    .link-button {
+        text-align: center;
+    }
+}
+
+/* Print Styles */
+@media print {
+    body {
+        background-color: white;
+    }
+
+    .link-button,
+    .pub-link {
+        border: 1px solid #ccc;
+    }
+
+    a {
+        color: #000;
+        text-decoration: underline;
+    }
+}

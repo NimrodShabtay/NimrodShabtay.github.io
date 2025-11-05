@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nimrod Shabtay</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Profile Section -->
+        <section class="profile-section">
+            <img src="profile.jpg" alt="Your Name" class="profile-image">
+            <h1 class="name">Nimrod Shabtay</h1>
+            
+            <div class="bio">
+                <p>
+                    I am a PhD candidate (Direct Track) at the faculty of engneering at Tel-Aviv University and a research intern at IBM-Research</a>, 
+                    supervised by <a href="https://www.giryes.sites.tau.ac.il/" target="_blank">Prof. Raja Giryes</a>.
+                </p>
+                <p>
+                    My research focuses on Large Multimodal Models (LMMs). I am particularly interested in overcoming critical challenges towards reliable, enhanced, and efficient LMMs.
+                </p>
+            </div>
+
+            <div class="contact">
+                <p>Contact: nimrod.shabtay@gmail.com</p>
+            </div>
+
+            <!-- Links -->
+            <div class="links">
+                <a href="https://scholar.google.com/citations?hl=iw&user=z4Jk_I4AAAAJ" target="_blank" class="link-button">Google Scholar</a>
+                <a href="https://github.com/NimrodShabtay" target="_blank" class="link-button">GitHub</a>
+                <a href="https://x.com/NimrodShabtay" target="_blank" class="link-button">Twitter</a>
+                <a href="cv.pdf" target="_blank" class="link-button">CV</a>
+            </div>
+        </section>
+
+        <!-- Publications Section -->
+        <section class="publications-section">
+            <h2 class="section-title">Publications</h2>
+            <div id="publications-list" class="publications-list">
+                <div class="loading">
+                    <div class="spinner"></div>
+                    <p>Loading publications from Google Scholar...</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>Last updated: <span id="last-updated"></span></p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
