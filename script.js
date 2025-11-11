@@ -142,7 +142,7 @@ const manualPubs = [
         title: 'Teaching VLMs to Localize Specific Objects from In-context Examples',
         authors: 'Sivan Doveh*, <strong>Nimrod Shabtay*</strong>, Wei Lin, Eli Schwartz, Hilde Kuehne, Raja Giryes, Rogerio Feris, Leonid Karlinsky, James Glass, Assaf Arbelle, Shimon Ullman, M. Jehanzeb Mirza',
         venue: 'ICCV',
-        year: '2024',
+        year: '2025',
         links: [
             { label: 'Paper', url: 'https://arxiv.org/abs/2411.13317' },
             { label: 'Code', url: 'https://github.com/sivandoveh/iploc' },
