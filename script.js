@@ -205,8 +205,8 @@ const manualPubs = [
     {
         title: 'PIP: Positional-encoding Image Prior',
         authors: '<strong>Nimrod Shabtay*</strong>, Eli Schwartz*, Raja Giryes',
-        venue: 'arXiv',
-        year: '2022',
+        venue: 'IEEE - TIP',
+        year: '2025',
         links: [
             { label: 'Paper', url: 'https://arxiv.org/abs/2211.14298' },
             { label: 'code', url: 'https://github.com/NimrodShabtay/positional-encoding-image-prior' }
