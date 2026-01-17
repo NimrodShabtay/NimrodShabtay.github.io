@@ -141,8 +141,8 @@ const manualPubs = [
     {
         title: 'Advancing Speech Understanding in Speech-Aware Language Models with GRPO',
         authors: 'Avishai Elmakies, Hagai Aronowitz, <strong>Nimrod Shabtay</strong>, Eli Schwartz, Ron Hoory, Avihu Dekel',
-        venue: 'arXiv',
-        year: '2025',
+        venue: 'ICASSP',
+        year: '2026',
         links: [
             { label: 'Paper', url: 'https://arxiv.org/abs/2509.16990' }
         ],
