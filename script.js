@@ -121,6 +121,15 @@ function displayManualPublications() {
     
 const manualPubs = [
     {
+        title: 'CLIMP: Contrastive Language-Image Mamba Pretraining',
+        authors: '<strong>Nimrod Shabtay</strong>, Itamar Zimerman, Eli Schwartz, Raja Giryes',
+        venue: 'arXiv',
+        year: '2026',
+        links: [
+            { label: 'Paper', url: 'https://arxiv.org/abs/2601.06891' }
+        ],
+    },
+    {
         title: 'CARES: Context-Aware Resolution Selector for VLMs',
         authors: 'Moshe Kimhi*, <strong>Nimrod Shabtay*</strong>, Raja Giryes, Chaim Baskin, Eli Schwartz',
         venue: 'arXiv',
