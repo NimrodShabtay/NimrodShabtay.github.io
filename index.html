@@ -10,9 +10,26 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#about" class="nav-logo">NS</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#talks">Talks</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
     <div class="container">
         <!-- Profile Section -->
-        <section class="profile-section">
+        <section id="about" class="profile-section">
             <img src="profile.jpg" alt="Your Name" class="profile-image">
             <h1 class="name">Nimrod Shabtay</h1>
             
@@ -25,11 +42,9 @@
                     My research focuses on Large Multimodal Models (LMMs). I am particularly interested in overcoming critical challenges towards reliable, enhanced, and efficient LMMs.
                 </p>
             </div>
-
             <div class="contact">
-                <p>Contact: nimrod.shabtay@gmail.com</p>
+                <p>Contact: nimrod.shabtay [at] gmail [dot] com</p>
             </div>
-
             <!-- Links -->
             <div class="links">
                 <a href="https://scholar.google.com/citations?hl=iw&user=z4Jk_I4AAAAJ" target="_blank" class="link-button">Google Scholar</a>
@@ -41,7 +56,7 @@
         </section>
 
         <!-- Publications Section -->
-        <section class="publications-section">
+        <section id="publications" class="publications-section">
             <h2 class="section-title">Publications</h2>
             <div id="publications-list" class="publications-list">
                 <div class="loading">
@@ -51,12 +66,53 @@
             </div>
         </section>
 
+        <!-- Talks Section -->
+        <section id="talks" class="talks-section">
+            <h2 class="section-title">Talks</h2>
+            <div class="talks-list">
+                <div class="talk-item">
+                    <span class="talk-date">January 2026</span>
+                    <div class="talk-content">
+                        <h3 class="talk-title">LiveXiv</h3>
+                        <p class="talk-venue">Israel Computer Vision Day</p>
+                    </div>
+                </div>
+                <div class="talk-item">
+                    <span class="talk-date">January 2026</span>
+                    <div class="talk-content">
+                        <h3 class="talk-title">Overcoming Critical Challenges in VLMs</h3>
+                        <p class="talk-venue">Amazon Prime Sport AI-Club</p>
+                    </div>
+                </div>
+                <div class="talk-item">
+                    <span class="talk-date">December 2025</span>
+                    <div class="talk-content">
+                        <h3 class="talk-title">Overcoming Critical Challenges in VLMs</h3>
+                        <p class="talk-venue">Technion's Pixel-Club</p>
+                    </div>
+                </div>
+                <div class="talk-item">
+                    <span class="talk-date">June 2022</span>
+                    <div class="talk-content">
+                        <h3 class="talk-title">Computer Vision Introduction</h3>
+                        <p class="talk-venue">The Cognitive Neuropsychology Lab (PI Prof. Avishai Henik) – BGU</p>
+                    </div>
+                </div>
+                <div class="talk-item">
+                    <span class="talk-date">April 2021</span>
+                    <div class="talk-content">
+                        <h3 class="talk-title">Deployment and Monitoring at Nanit</h3>
+                        <p class="talk-venue">Guest Speaker at "Gradient Dissent"</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Footer -->
         <footer class="footer">
             <p>Last updated: <span id="last-updated"></span></p>
         </footer>
     </div>
-
     <script src="script.js"></script>
 </body>
 </html>

@@ -8,7 +8,34 @@ const PROXY_URL = 'https://api.allorigins.win/raw?url=';
 document.addEventListener('DOMContentLoaded', function() {
     loadPublications();
     displayLastUpdated();
+    initMobileNav();
 });
+
+// Mobile Navigation Toggle
+function initMobileNav() {
+    const navToggle = document.querySelector('.nav-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    if (navToggle) {
+        navToggle.addEventListener('click', function() {
+            navLinks.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking a link
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+            });
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', function(e) {
+            if (!navToggle.contains(e.target) && !navLinks.contains(e.target)) {
+                navLinks.classList.remove('active');
+            }
+        });
+    }
+}
 
 function displayLastUpdated() {
     const date = new Date().toLocaleDateString('en-US', { 
