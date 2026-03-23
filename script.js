@@ -68,6 +68,18 @@ const PUBLICATIONS = [
     },
     // ===== TIER 3: Preprints =====
     {
+        title: 'Look Where It Matters: High-Resolution Crops Retrieval for Efficient VLMs',
+        authors: '<strong>Nimrod Shabtay</strong>, Moshe Kimhi, Artem Spector, Sivan Haray, Ehud Rivlin, Chaim Baskin, Raja Giryes, Eli Schwartz',
+        venue: 'arXiv',
+        year: '2026',
+        links: [
+            { label: 'Paper', url: 'https://arxiv.org/abs/2603.16932' },
+            { label: 'Project Page', url: 'https://nimrodshabtay.github.io/AwaRes/' },
+            { label: 'Code', url: 'https://github.com/NimrodShabtay/AwaRes' },
+            { label: 'Dataset', url: 'https://huggingface.co/datasets/NimrodShabtay1986/AwaRes' },
+        ],
+    },
+    {
         title: 'CLIMP: Contrastive Language-Image Mamba Pretraining',
         authors: '<strong>Nimrod Shabtay</strong>, Itamar Zimerman, Eli Schwartz, Raja Giryes',
         venue: 'arXiv',
