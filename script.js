@@ -3,6 +3,18 @@
 // TIER 2: Accepted papers, not first/equal-first author (by year desc)
 // TIER 3: Preprints / not yet accepted (by year desc)
 const PUBLICATIONS = [
+    // ===== TIER 1: Accepted — First or Equal-First Author =====
+    {
+        title: 'CARES: Context-Aware Resolution Selector for VLMs',
+        authors: 'Moshe Kimhi*, <strong>Nimrod Shabtay*</strong>, Raja Giryes, Chaim Baskin, Eli Schwartz',
+        venue: 'ACL',
+        year: '2026',
+        links: [
+            { label: 'Paper', url: 'https://arxiv.org/abs/2510.19496' },
+            { label: 'Code', url: 'https://github.com/mkimhi/CARES' },
+            { label: 'Project Page', url: 'https://mkimhi.github.io/CARES/' },
+        ],
+    },
     // ===== TIER 2: Accepted — Not First/Equal-First Author =====
     {
         title: 'Advancing Speech Understanding in Speech-Aware Language Models with GRPO',
@@ -13,8 +25,7 @@ const PUBLICATIONS = [
             { label: 'Paper', url: 'https://arxiv.org/abs/2509.16990' },
         ],
     },
-    // ===== TIER 1: Accepted — First or Equal-First Author =====
-        {
+    {
         title: 'Teaching VLMs to Localize Specific Objects from In-context Examples',
         authors: 'Sivan Doveh*, <strong>Nimrod Shabtay*</strong>, Wei Lin, Eli Schwartz, Hilde Kuehne, Raja Giryes, Rogerio Feris, Leonid Karlinsky, James Glass, Assaf Arbelle, Shimon Ullman, M. Jehanzeb Mirza',
         venue: 'ICCV',
@@ -86,15 +97,6 @@ const PUBLICATIONS = [
         year: '2026',
         links: [
             { label: 'Paper', url: 'https://arxiv.org/abs/2601.06891' },
-        ],
-    },
-    {
-        title: 'CARES: Context-Aware Resolution Selector for VLMs',
-        authors: 'Moshe Kimhi*, <strong>Nimrod Shabtay*</strong>, Raja Giryes, Chaim Baskin, Eli Schwartz',
-        venue: 'arXiv',
-        year: '2025',
-        links: [
-            { label: 'Paper', url: 'https://arxiv.org/abs/2510.19496' },
         ],
     },
     {
