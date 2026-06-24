@@ -4,6 +4,15 @@
 // TIER 3: Preprints / not yet accepted (by year desc)
 const PUBLICATIONS = [
     {
+        title: 'CLIMP: Contrastive Language-Image Mamba Pretraining',
+        authors: '<strong>Nimrod Shabtay</strong>, Itamar Zimerman, Eli Schwartz, Raja Giryes',
+        venue: 'ECCV',
+        year: '2026',
+        links: [
+            { label: 'Paper', url: 'https://arxiv.org/abs/2601.06891' },
+        ],
+    },
+    {
         title: 'CARES: Context-Aware Resolution Selector for VLMs',
         authors: 'Moshe Kimhi*, <strong>Nimrod Shabtay*</strong>, Raja Giryes, Chaim Baskin, Eli Schwartz',
         venue: 'ACL (Main)',
@@ -86,15 +95,6 @@ const PUBLICATIONS = [
             { label: 'Project Page', url: 'https://nimrodshabtay.github.io/AwaRes/' },
             { label: 'Code', url: 'https://github.com/NimrodShabtay/AwaRes' },
             { label: 'Dataset', url: 'https://huggingface.co/datasets/NimrodShabtay1986/AwaRes' },
-        ],
-    },
-    {
-        title: 'CLIMP: Contrastive Language-Image Mamba Pretraining',
-        authors: '<strong>Nimrod Shabtay</strong>, Itamar Zimerman, Eli Schwartz, Raja Giryes',
-        venue: 'arXiv',
-        year: '2026',
-        links: [
-            { label: 'Paper', url: 'https://arxiv.org/abs/2601.06891' },
         ],
     },
     {
