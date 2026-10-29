@@ -3,6 +3,18 @@
 // TIER 2: Accepted papers, not first/equal-first author (by year desc)
 // TIER 3: Preprints / not yet accepted (by year desc)
 const PUBLICATIONS = [
+        {
+        title: 'Look Where It Matters: High-Resolution Crops Retrieval for Efficient VLMs',
+        authors: '<strong>Nimrod Shabtay</strong>, Moshe Kimhi, Artem Spector, Sivan Haray, Ehud Rivlin, Chaim Baskin, Raja Giryes, Eli Schwartz',
+        venue: 'EMNLPW (Best Paper)',
+        year: '2026',
+        links: [
+            { label: 'Paper', url: 'https://arxiv.org/abs/2603.16932' },
+            { label: 'Project Page', url: 'https://nimrodshabtay.github.io/AwaRes/' },
+            { label: 'Code', url: 'https://github.com/NimrodShabtay/AwaRes' },
+            { label: 'Dataset', url: 'https://huggingface.co/datasets/NimrodShabtay1986/AwaRes' },
+        ],
+    },
     {
         title: 'CLIMP: Contrastive Language-Image Mamba Pretraining',
         authors: '<strong>Nimrod Shabtay</strong>, Itamar Zimerman, Eli Schwartz, Raja Giryes',
@@ -86,15 +98,13 @@ const PUBLICATIONS = [
     },
     // ===== TIER 3: Preprints =====
     {
-        title: 'Look Where It Matters: High-Resolution Crops Retrieval for Efficient VLMs',
-        authors: '<strong>Nimrod Shabtay</strong>, Moshe Kimhi, Artem Spector, Sivan Haray, Ehud Rivlin, Chaim Baskin, Raja Giryes, Eli Schwartz',
+        title: 'Watch and Learn: Teaching Visual In-Context Learning by Removing Textual Shortcuts',
+        authors: 'Nimrod Shabtay, Asaf Yehudai, Avihu Dekel, Eli Schwartz, Raja Giryes',
         venue: 'arXiv',
         year: '2026',
         links: [
-            { label: 'Paper', url: 'https://arxiv.org/abs/2603.16932' },
-            { label: 'Project Page', url: 'https://nimrodshabtay.github.io/AwaRes/' },
-            { label: 'Code', url: 'https://github.com/NimrodShabtay/AwaRes' },
-            { label: 'Dataset', url: 'https://huggingface.co/datasets/NimrodShabtay1986/AwaRes' },
+            { label: 'Paper', url: 'https://arxiv.org/abs/2610.30913' },
+            { label: 'Dataset', url: 'https://huggingface.co/datasets/NimrodShabtay1986/MIME' },
         ],
     },
     {
